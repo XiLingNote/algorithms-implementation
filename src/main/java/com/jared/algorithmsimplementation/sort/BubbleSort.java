@@ -4,8 +4,6 @@ package com.jared.algorithmsimplementation.sort;
  * /**
   * @author jared
   * @date 2019-05-22 13:53
-  * @param
-  *
   *
   * 原理：比较两个相邻的元素，将值大的元素交换至右端。
   *
@@ -15,7 +13,19 @@ package com.jared.algorithmsimplementation.sort;
   **/
 public class BubbleSort {
     public static void main(String[] args) {
+        BubbleSort bubbleSort = new BubbleSort();
+
         int[] array={9,1,4,3,4,5,6,7,8,9,20};
+       bubbleSort.bubbleSort(array);
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+
+
+    }
+
+    public int [] bubbleSort(int [] array){
         for (int i = 0; i < array.length; i++) {
             for (int j = 1; j < array.length-i; j++) {
                 //如果数据倒叙
@@ -26,13 +36,6 @@ public class BubbleSort {
                 }
             }
         }
-
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
-
-
+        return array;
     }
-
-
 }

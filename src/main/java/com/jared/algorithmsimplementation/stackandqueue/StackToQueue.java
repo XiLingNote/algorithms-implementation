@@ -43,16 +43,27 @@ public class StackToQueue {
         return  st;
     }
 
+    public int offerPop(){
+        while (!stack1.empty()){
+            stack2.push(stack1.pop());
+        }
+        int st = stack2.pop();
+        while (!stack2.empty()){
+            stack1.push(stack2.pop());
+        }
+        return st;
+    }
+
     public static void main(String[] args) {
         StackToQueue stackToQueue = new StackToQueue();
         stackToQueue.push(1);
         stackToQueue.push(10);
         stackToQueue.push(11);
         stackToQueue.push(12);
-        System.out.println(stackToQueue.pop());
-        System.out.println(stackToQueue.pop());
-        System.out.println(stackToQueue.pop());
-        System.out.println(stackToQueue.pop());
+        System.out.println(stackToQueue.offerPop());
+        System.out.println(stackToQueue.offerPop());
+        System.out.println(stackToQueue.offerPop());
+        System.out.println(stackToQueue.offerPop());
 
 
     }
