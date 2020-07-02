@@ -13,7 +13,7 @@ import java.util.List;
  **/
 public class FibonacciSequence {
     public static void main(String[] args) {
-        List<BigInteger> list = new LinkedList<>();
+        List<BigInteger> list = new LinkedList();
         for (int i = 0; i < 10000 ; i++) {
             if(list.size()>3){
                 list.remove(0);
