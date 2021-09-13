@@ -1,40 +1,39 @@
 package com.jared.algorithmsimplementation.lecode;
 
 /**
+ * 最长回文子串
+ * 中心扩散法
  *
  */
 public class PalindromicSubstring {
     public static void main(String[] args) {
         PalindromicSubstring p = new PalindromicSubstring();
-        System.out.println(p.longestPalindrome_1("abb1a"));
+        System.out.println(p.longestPalindrome("aba1ac"));
     }
+    public String longestPalindrome(String s) {
+        if(s == null || s.length() <= 1){
+            return s;
+        }
 
-    /**
-     * 暴力解法
-     */
-    String sub = "";
-    public String longestPalindrome_1(String s) {
-        for (int i = 0; i < s.length(); i++) {
-            for (int j = i + 1 ; j <= s.length(); j++) {
-                if(isPalindromic(s.substring(i,j))){
-                    if(sub.length()< s.substring(i,j).length()){
-                        sub = s.substring(i,j);
+        int maxStart = 0;
+        int maxEnd = 0;
+        int maxLength = 1;
+        boolean[][] index = new boolean[s.length()][s.length()];
+        for (int i = 1; i < s.length(); i++) {
+            for (int j = 0; j < i; j++) {
+                if(s.charAt(j) == s.charAt(i) && (i-j<=2 || index[i-1][j+1]) ){
+                    index[i][j] = true;
+                    if(maxLength > j -i +1){
+                        maxStart = j;
+                        maxEnd = i;
+                        maxLength = j-i +1;
                     }
+
                 }
+
             }
         }
-        return sub;
-    }
-    /**
-     ** @return
-     */
-    public boolean isPalindromic(String s){
-        for (int i = 0; i < s.length()/2; i++) {
-            boolean b = s.charAt(i) != s.charAt(s.length() - i - 1);
-            if(b){
-                return false;
-            }
-        }
-        return  true;
+
+        return s.substring(maxStart,maxEnd+1);
     }
 }
