@@ -23,10 +23,10 @@ public class PalindromicSubstring {
             for (int j = 0; j < i; j++) {
                 if(s.charAt(j) == s.charAt(i) && (i-j<=2 || index[i-1][j+1]) ){
                     index[i][j] = true;
-                    if(maxLength > j -i +1){
+                    if(maxLength > i - j +1){
                         maxStart = j;
                         maxEnd = i;
-                        maxLength = j-i +1;
+                        maxLength = i - j +1;
                     }
 
                 }
