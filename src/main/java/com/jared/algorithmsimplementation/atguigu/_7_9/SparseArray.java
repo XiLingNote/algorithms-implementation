@@ -1,10 +1,10 @@
-package com.jared.algorithmsimplementation.atguigu;
+package com.jared.algorithmsimplementation.atguigu._7_9;
 
 /**
  * @author sou
  * 稀疏数组的实现
  */
-public class _7_9_SparseArray {
+public class SparseArray {
     public static void main(String[] args) {
         //创建一个11行11列的棋盘
         int [][] array = new int[11][11];
