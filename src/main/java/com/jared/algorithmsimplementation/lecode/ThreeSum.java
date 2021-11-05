@@ -1,7 +1,12 @@
 package com.jared.algorithmsimplementation.lecode;
 
 import java.util.*;
-
+/**
+ *
+ *  三数之和暴力解法
+ * @Author shouxu
+ * @Date 2021/9/14 18:02
+ */
 public class ThreeSum {
     public static void main(String[] args) {
         ThreeSum threeSum = new ThreeSum();
