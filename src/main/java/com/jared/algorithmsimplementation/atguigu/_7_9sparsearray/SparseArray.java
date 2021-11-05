@@ -1,4 +1,4 @@
-package com.jared.algorithmsimplementation.atguigu._7_9;
+package com.jared.algorithmsimplementation.atguigu._7_9sparsearray;
 
 /**
  * @author sou
