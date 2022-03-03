@@ -1,5 +1,7 @@
 package com.jared.algorithmsimplementation.sort;
 
+import java.util.Arrays;
+
 /**
  *  冒泡排序
   * @author jared
@@ -12,23 +14,15 @@ package com.jared.algorithmsimplementation.sort;
   *  重复第一趟步骤，直至全部排序完成。
   **/
 public class BubbleSort {
+
     public static void main(String[] args) {
-        BubbleSort bubbleSort = new BubbleSort();
-
         int[] array={9,1,4,3,4,5,6,7,8,9,20};
-       bubbleSort.bubbleSort(array);
-
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
-
-
+        bubbleSort(array);
+        System.out.println(Arrays.toString(array));
     }
-
-    public int [] bubbleSort(int [] array){
+    public static int [] bubbleSort(int [] array){
         for (int i = 0; i < array.length; i++) {
             for (int j = 1; j < array.length-i; j++) {
-                //如果数据倒叙
                 if(array[j]<array[j-1]){
                     int temp = array[j-1];
                     array[j-1] = array[j];
