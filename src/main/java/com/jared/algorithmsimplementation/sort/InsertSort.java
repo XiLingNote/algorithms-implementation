@@ -1,7 +1,11 @@
 package com.jared.algorithmsimplementation.sort;
 
 /**
+ *
  * 插入排序
+ *
+ * @Author shouxu
+ * @Date 2022/3/3 16:16
  */
 public class InsertSort {
     public static void main(String[] args) {

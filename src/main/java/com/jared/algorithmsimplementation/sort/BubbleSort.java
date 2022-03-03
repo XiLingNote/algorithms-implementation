@@ -1,7 +1,7 @@
 package com.jared.algorithmsimplementation.sort;
 
 /**
- * /**
+ *  冒泡排序
   * @author jared
   * @date 2019-05-22 13:53
   *

@@ -1,6 +1,7 @@
 package com.jared.algorithmsimplementation.sort;
 
 /**
+ * 快速排序
  * 1）设置两个变量i、j，排序开始的时候：i=0，j=N-1；
  * 2）以第一个数组元素作为关键数据，赋值给key，即key=A[0]；
  * 3）从j开始向前搜索，即由后开始向前搜索(j--)，找到第一个小于key的值A[j]，将A[j]和A[i]的值交换；
