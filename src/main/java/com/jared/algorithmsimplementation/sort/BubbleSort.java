@@ -16,8 +16,8 @@ import java.util.Arrays;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] array={9,1,4,3,4,5,6,7,8,9,20};
-        bubbleSort(array);
+        int[] array={9,1,4,3,4,5,6,7,8,9,20,19};
+        bubbleSort_20220303(array);
         System.out.println(Arrays.toString(array));
     }
     public static int [] bubbleSort(int [] array){
@@ -27,6 +27,20 @@ public class BubbleSort {
                     int temp = array[j-1];
                     array[j-1] = array[j];
                     array[j] =  array[temp];
+                }
+            }
+        }
+        return array;
+    }
+    public static int [] bubbleSort_20220303(int [] array){
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("i"+ i);
+            for (int j = 0; j < array.length - i - 1 ; j++) {
+                System.out.println("j"+ j);
+                if( array[j+1] < array[j]){
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1]  = temp;
                 }
             }
         }
