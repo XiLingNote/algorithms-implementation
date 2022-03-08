@@ -11,13 +11,6 @@ import java.util.Arrays;
  * @Date 2022/3/3 16:16
  */
 public class InsertSort {
-    public static void main(String[] args) {
-        InsertSort sort = new InsertSort();
-        int[] array={9,1,4,3,4,5,6,7,8,9,20,9,1};
-        sort.insetSort_20210303(array);
-        System.out.println(Arrays.toString(array));
-    }
-
     public  int [] insetSort_20210303(int [] array){
         for (int i = 0; i < array.length; i++) {
             for (int j = i; j >0; j--) {
@@ -30,6 +23,14 @@ public class InsertSort {
         }
         return array;
     }
+    public static void main(String[] args) {
+        InsertSort sort = new InsertSort();
+        int[] array={9,1,4,3,4,5,6,7,8,9,20,9,1};
+        sort.insetSort_20210303(array);
+        System.out.println(Arrays.toString(array));
+    }
+
+
     /**
      * 插入排序：
      * 当前的索引的数据和之前的数据对比，如果当前数据小的话，切换

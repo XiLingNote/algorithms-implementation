@@ -19,13 +19,6 @@ import java.util.Arrays;
  * @Date 2022/3/4 16:05
  */
 public class ShellSort {
-    public static void main(String[] args) {
-
-        int[] arr={9,1,4,3,4,5,6,7,8,9,20};
-        ShellSort.shellSort_20220304(arr);
-        System.out.println(Arrays.toString(arr));
-    }
-
     public static int [] shellSort_20220304(int [] array){
         for (int gap = array.length / 2; gap > 0; gap = gap / 2) {
             for (int i = 0; i < array.length; i = i + gap) {
@@ -41,6 +34,14 @@ public class ShellSort {
         }
         return array;
     }
+    public static void main(String[] args) {
+
+        int[] arr={9,1,4,3,4,5,6,7,8,9,20};
+        ShellSort.shellSort_20220304(arr);
+        System.out.println(Arrays.toString(arr));
+    }
+
+
 
     public static void sort(Comparable[] arr) {
         int j;
