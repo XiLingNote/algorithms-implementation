@@ -1,5 +1,8 @@
 package com.jared.algorithmsimplementation.targer_20221021.binary_tree;
 
+/**
+ * 543 二叉树的直径
+ */
 public class DiameterOfBinaryTree {
     int maxN;
     public int diameterOfBinaryTree(TreeNode root) {

@@ -1,7 +1,7 @@
 package com.jared.algorithmsimplementation.targer_20221021.binary_tree;
 
 /**
- * 填充每一个节点下一个右节点指针
+ * 116 填充每一个节点下一个右节点指针
  */
 public class PopulatingNextRightPointersInEachNode {
     public TreeNode connect(TreeNode root) {

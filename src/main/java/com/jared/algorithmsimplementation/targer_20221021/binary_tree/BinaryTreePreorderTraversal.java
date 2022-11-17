@@ -3,6 +3,9 @@ package com.jared.algorithmsimplementation.targer_20221021.binary_tree;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 二叉树的遍历 145 后序遍历 144 前序遍历
+ */
 public class BinaryTreePreorderTraversal {
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();

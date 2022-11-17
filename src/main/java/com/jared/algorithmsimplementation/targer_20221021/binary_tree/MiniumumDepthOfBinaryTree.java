@@ -1,5 +1,8 @@
 package com.jared.algorithmsimplementation.targer_20221021.binary_tree;
 
+/**
+ * 104 二叉树的最大深度
+ */
 public class MiniumumDepthOfBinaryTree {
     public int maxDepth(TreeNode root) {
         int max = 0;
